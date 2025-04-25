@@ -1,30 +1,33 @@
 <main>
-  <section>
+  <section class="header-section">
     <!-- HEADER -->
-    <div>
+    <div class="topBar-header">
       <!-- SETA PARA DIRETIA -->
-      <div></div>
+      <img class="seta-header-login" src="/seta.png" />
       <!-- IMG CCB -->
-      <img src="/logo.svg" />
+      <img class="logo-header" src="/logo.svg" />
     </div>
   </section>
 
-  <section>
+  <section class="form-section">
     <div>
-      <h1>LOGIN</h1>
+      <h1>{{ title }}</h1>
       <h2>Email/Usuário:</h2>
       <input />
       <!-- LEMBRAR DE COLOCAR O ICON USER -->
       <h2>Senha:</h2>
       <input />
       <!-- LEMBRAR DE COLOCAR O ICON CADIADO -->
-      <button>Cadastro</button>
-      <button>Entrar</button>
+      <div class="btn-wrapper">
+        <button class="btn-primary">{{ primaryBtnText }}</button>
+        <button class="btn-secondery">{{ secondaryBtnText }}</button>
+      </div>
+
       <h3>Esqueceu a senha?</h3>
     </div>
   </section>
 
-  <section>
+  <section class="baseboard-section">
     <h2>Congregação Cristã no Brasil - Todos os direitos reservados</h2>
   </section>
 </main>
