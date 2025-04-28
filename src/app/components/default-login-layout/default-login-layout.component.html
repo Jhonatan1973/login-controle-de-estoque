@@ -3,7 +3,7 @@
     <!-- HEADER -->
     <div class="topBar-header">
       <!-- SETA PARA DIRETIA -->
-      <img class="seta-header-login" src="/seta.png" />
+      <img class="arrow-header-login" src="/seta.png" />
       <!-- IMG CCB -->
       <img class="logo-header" src="/logo.svg" />
     </div>
@@ -13,21 +13,28 @@
     <div>
       <h1>{{ title }}</h1>
       <h2>Email/Usuário:</h2>
-      <input />
-      <!-- LEMBRAR DE COLOCAR O ICON USER -->
+
+      <img class="icon-user-input" src="/icon-user-input.png" />
+      <input class="input-control"/>
+
       <h2>Senha:</h2>
-      <input />
-      <!-- LEMBRAR DE COLOCAR O ICON CADIADO -->
+      <img class="icon-padlock-input" src="/icon-padlock-input.png" />
+      <input class="input-control" type="password"/>
+
       <div class="btn-wrapper">
-        <button class="btn-primary">{{ primaryBtnText }}</button>
-        <button class="btn-secondery">{{ secondaryBtnText }}</button>
+        <input type="checkbox" class="checkbox-remember-password">
+        <h4>Lembrar meu email/usuário</h4>
+        <button class="btn-primary" >{{ primaryBtnText }} </button>
       </div>
 
       <h3>Esqueceu a senha?</h3>
+
+
     </div>
   </section>
 
   <section class="baseboard-section">
-    <h2>Congregação Cristã no Brasil - Todos os direitos reservados</h2>
+    <h2>Congregação Cristã no Brasil - Todos os direitos reservados</h2><br>
+    <h3>5.20.2-wpp2</h3>
   </section>
 </main>
