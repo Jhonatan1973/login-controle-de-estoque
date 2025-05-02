@@ -14,9 +14,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
   }
- .baseboard-section {
+  .baseboard-section {
     position: fixed;
     width: 100%;
     bottom: 20px;
@@ -27,85 +26,85 @@ main {
       margin-bottom: -8px;
     }
     h3 {
-      font-weight:  200;
+      font-weight: 200;
       font-size: 15px;
     }
-    
- }
+  }
   .topBar-header {
     position: fixed;
     top: 0px;
     width: 100%;
     background-color: $secondery-color;
     margin-bottom: 100px;
-    padding: 20px 759px;
-    
+    padding: 50px 759px;
   }
 
   .arrow-header-login {
-    width: 50px;
-    top: -10px;
+    width: 100px;
+    top: -7px;
     left: 0px;
     position: fixed;
   }
 
   .logo-header {
-    width: 70px;
-    left: 38px;
-    top: 2px;
+    width: 120px;
+    left: 18px;
+    top: 20px;
     position: fixed;
   }
 
   .form-section {
     flex-grow: 1;
-    width: 350px;
+    width: 375px;
     background-color: $gray-bg;
-    padding: 70px 80px;
+    padding: 65px 70px;
     border-radius: 5px;
-    position: fixed;
-    box-shadow: 1px 1px 20px rgba(126, 157, 214, 0.2);
-    
+    position: absolute;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 
     .input-control {
-      width: 300px;
+      width: 340px;
       padding: 100%;
       margin-bottom: 10px;
-      padding: 4px 70px;
-      border: 1px solid ;
+      padding: 8px 70px;
+      border: 1px solid;
       opacity: 70%;
       border-radius: 5px;
       color: rgb(117, 117, 117);
-      padding-left: 10px; 
+      padding-left: 10px;
       border: 2px solid rrgb(167, 167, 167);
-      transition: .3s ease;
+      transition: 0.3s ease;
     }
-    .input-control:focus, input-control:hover {
+    .input-control:focus,
+    input-control:hover {
       outline: none;
       border-color: $color-soft-blue;
       background-color: #fff;
       box-shadow: 0 0 0 0.5px $color-soft-blue;
-     }
-     .icon-user-input {
+    }
+    .icon-user-input {
       display: flex;
       width: 28px;
-      top: 157px;
-      left: 297px;
+      top: 97px;
+      left: 325px;
       position: absolute;
     }
     .icon-padlock-input {
       display: flex;
       width: 16px;
-      top: 220px;
-      left: 302px;
+      top: 178px;
+      left: 332px;
       position: absolute;
     }
-    
-    h1 {
-      position: flex;
-      padding: 0px 115px;
-      margin-bottom: 40px;
-      font-size: 20px;
-      font-weight: bold;
+
+    p {
+      position: fixed;
+      padding: 1px 128px;
+      margin-bottom: 10px;
+      margin-top: -50px;
+      font-size: 26px;
+      font-weight: 100;
+      color: #428bca;
     }
     h2 {
       padding: 1px 2px;
@@ -115,12 +114,15 @@ main {
       margin-bottom: 5px;
     }
     h3 {
-      position: fixed;
-      padding: 35px 170px;
-      font-size: 15px;
+      padding: 5px 0px;
+      font-size: 14px;
+      margin-bottom: -50px;
+      margin-left: 200px;
+      margin-top: 80px;
       font-weight: normal;
       opacity: 100%;
       color: $color-soft-blue;
+      cursor: pointer;
     }
     h4 {
       position: relative;
@@ -131,10 +133,106 @@ main {
     }
     .checkbox-remember-password {
       position: relative;
-      left: -140px;
-      top: 5px;
+      left: -160px;
+      top: 3px;
     }
-    
+    .checkbox-remember-password {
+      --primary-color: #1677ff;
+      --secondary-color: #fff;
+      --primary-hover-color: #4096ff;
+      --checkbox-diameter: 17px;
+      --checkbox-border-radius: 5px;
+      --checkbox-border-color: #d9d9d9;
+      --checkbox-border-width: 1px;
+      --checkbox-border-style: solid;
+      --checkmark-size: 1.2;
+    }
+    .checkbox-remember-password,
+    .checkbox-remember-password *,
+    .checkbox-remember-password *::before,
+    .checkbox-remember-password *::after {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    .checkbox-remember-password {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: var(--checkbox-diameter);
+      height: var(--checkbox-diameter);
+      border-radius: var(--checkbox-border-radius);
+      background: var(--secondary-color);
+      border: var(--checkbox-border-width) var(--checkbox-border-style)
+        var(--checkbox-border-color);
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      cursor: pointer;
+      position: relative;
+    }
+    .checkbox-remember-password::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-box-shadow: 0 0 0 calc(var(--checkbox-diameter) / 2.5)
+        var(--primary-color);
+      box-shadow: 0 0 0 calc(var(--checkbox-diameter) / 2.5)
+        var(--primary-color);
+      border-radius: inherit;
+      opacity: 0;
+      -webkit-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+      -o-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+      transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+    }
+    .checkbox-remember-password::before {
+      top: 40%;
+      left: 50%;
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 7px;
+      border-right: 2px solid var(--secondary-color);
+      border-bottom: 2px solid var(--secondary-color);
+      -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(0);
+      -ms-transform: translate(-50%, -50%) rotate(45deg) scale(0);
+      transform: translate(-50%, -50%) rotate(45deg) scale(0);
+      opacity: 0;
+      -webkit-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),
+        opacity 0.1s;
+      -o-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6), opacity 0.1s;
+      transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6), opacity 0.1s;
+    }
+    .checkbox-remember-password:hover {
+      border-color: var(--primary-color);
+    }
+    .checkbox-remember-password:checked {
+      background: var(--primary-color);
+      border-color: transparent;
+    }
+    .checkbox-remember-password:checked::before {
+      opacity: 1;
+      -webkit-transform: translate(-50%, -50%) rotate(45deg)
+        scale(var(--checkmark-size));
+      -ms-transform: translate(-50%, -50%) rotate(45deg)
+        scale(var(--checkmark-size));
+      transform: translate(-50%, -50%) rotate(45deg)
+        scale(var(--checkmark-size));
+      -webkit-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+      -o-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+      transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+    }
+    .checkbox-remember-password:active:not(:checked)::after {
+      -webkit-transition: none;
+      -o-transition: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      transition: none;
+      opacity: 1;
+    }
+
     .btn-wrapper {
       display: flex;
       flex-direction: column;
@@ -147,15 +245,16 @@ main {
       h4 {
         padding: 1px 2px;
         font-size: 15px;
-        top: -41px;
+        top: -44.2px;
         font-weight: normal;
         opacity: 70%;
         margin-bottom: 4px;
+        margin-left: -31px;
       }
     }
     button {
       display: flex;
-      width: 50%;
+      width: 100%;
       flex-direction: column;
       border-radius: 8px;
       font-size: 16px;
@@ -165,12 +264,11 @@ main {
       background-color: $btn-primary;
       padding: 10px 0px;
       margin-top: -40px;
+      cursor: pointer;
 
       &.btn-primaty {
         color: black;
       }
-
     }
-
   }
 }

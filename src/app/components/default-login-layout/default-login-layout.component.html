@@ -3,38 +3,40 @@
     <!-- HEADER -->
     <div class="topBar-header">
       <!-- SETA PARA DIRETIA -->
-      <img class="arrow-header-login" src="/seta.png" />
+      <!-- <img class="arrow-header-login" src="svg/seta.png" />-->
       <!-- IMG CCB -->
-      <img class="logo-header" src="/logo.svg" />
+      <img class="logo-header" src="svg/logo.svg" />
     </div>
   </section>
 
   <section class="form-section">
     <div>
-      <h1>{{ title }}</h1>
+      <p>{{ title }}</p>
       <h2>Email/Usuário:</h2>
 
-      <img class="icon-user-input" src="/icon-user-input.png" />
-      <input class="input-control"/>
+      <img class="icon-user-input" src="png/icon-user-input.png" />
+      <input class="input-control" />
 
       <h2>Senha:</h2>
-      <img class="icon-padlock-input" src="/icon-padlock-input.png" />
-      <input class="input-control" type="password"/>
+      <img class="icon-padlock-input" src="png/icon-padlock-input.png" />
+      <input class="input-control" type="password" />
 
       <div class="btn-wrapper">
-        <input type="checkbox" class="checkbox-remember-password">
+        <input type="checkbox" class="checkbox-remember-password" />
         <h4>Lembrar meu email/usuário</h4>
-        <button class="btn-primary" >{{ primaryBtnText }} </button>
+        <button class="btn-primary" (click)="submit()" id="sendLoginData">
+          {{ primaryBtnText }}
+        </button>
       </div>
 
       <h3>Esqueceu a senha?</h3>
-
-
     </div>
   </section>
 
   <section class="baseboard-section">
-    <h2>Congregação Cristã no Brasil - Todos os direitos reservados</h2><br>
+    <h2>Congregação Cristã no Brasil - Todos os direitos reservados</h2>
+    <br />
     <h3>5.20.2-wpp2</h3>
   </section>
+  <script src="default-login-layout.component.js"></script>
 </main>

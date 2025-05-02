@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { DefaultLoginLayoutComponent } from '../../components/default-login-layout/default-login-layout.component';
 
 @Component({
@@ -7,4 +7,8 @@ import { DefaultLoginLayoutComponent } from '../../components/default-login-layo
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss',
 })
-export class LoginComponent {}
+export class LoginComponent {
+  submit() {
+    console.log('foi ebaaaaaaaaa');
+  }
+}
