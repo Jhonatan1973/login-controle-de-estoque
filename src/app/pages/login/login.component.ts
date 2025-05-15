@@ -9,6 +9,6 @@ import { DefaultLoginLayoutComponent } from '../../components/default-login-layo
 })
 export class LoginComponent {
   submit() {
-    console.log('foi ebaaaaaaaaa');
+    console.log('rodando');
   }
 }
